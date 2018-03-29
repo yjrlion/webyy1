@@ -1,0 +1,6 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dd,input,textarea,select,option{margin:0;padding:0;}
+ul,ol{list-style: none;}
+img,input{border:none;vertical-align:top}
+a{text-decoration: none;}
+header,nav,article,section, aside,time,footer{display: block;}
+em{font-style: normal;}

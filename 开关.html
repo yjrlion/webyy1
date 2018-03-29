@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.father{margin: 100px auto;width: 100px;height: 32px;border: 1px solid #dcdedd;border-radius: 17px;box-shadow: 0 6px 10px  #dbdbdb inset;position: relative;overflow: hidden;}
+			.father:after{
+				content: "";
+				border: 3px solid #DFDFDF;
+				width: 5px;
+				height: 5px;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				opacity: .8;
+				border-radius:4px ;
+			}
+			.son{width: 100px;height: 31px;border-radius: 15px;background-color: #ffd701;position: absolute;top: 1px;left: -69px;z-index: 1;box-shadow: 0 2px 10px #ddd inset;transition: all 2s;}
+			
+			.son:before{
+				content: "";
+				width: 2px;
+				height: 10px;
+				top: 10px;
+				left: 35px;
+				background-color: #fff;
+				position: absolute;
+				
+			}
+			.son:after{
+				content: "";
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				position: absolute;
+				top: -1px;
+				right: -1px;
+				border: 1px solid #adaca8;
+				background-color: #fff;
+			}
+			.father:hover .son{
+				left: -1px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="father">
+			<div class="son"></div>
+		</div>
+	</body>
+</html>
